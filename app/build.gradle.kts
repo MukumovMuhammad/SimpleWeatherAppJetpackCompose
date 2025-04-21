@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.example.weatherapp"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.weatherapp"
@@ -66,4 +66,27 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+
+//    Retrofit
+    implementation("com.squareup.retrofit2:retrofit:2.11.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.11.0")
+
+//    compose-runtime || liveData runtime android library
+
+    implementation("androidx.compose.runtime:runtime:1.7.8")
+    implementation("androidx.compose.runtime:runtime-livedata:1.7.8")
+    implementation("androidx.compose.runtime:runtime-rxjava2:1.7.8")
+
+//
+////    Coil for loading imgs
+//
+//    implementation("io.coil-kt.coil3:coil-compose:3.1.0")
+//
+////    Having some version problem
+//    implementation("some-library-that-depends-on-kotlin-stdlib") {
+//        version {
+//            strictly("[1.9.0, 2.0.0)") // Force a version compatible with your compiler
+//        }
+//    }
 }
